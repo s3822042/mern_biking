@@ -1,8 +1,8 @@
 import React from 'react';
-
+import {HomeContainer} from "../../containers";
 function HomePage(){
     return (
-        <div>Home</div>
+        <HomeContainer/>
     )
 }
 
