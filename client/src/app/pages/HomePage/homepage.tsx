@@ -5,5 +5,4 @@ function HomePage(){
         <HomeContainer/>
     )
 }
-
 export default HomePage;
