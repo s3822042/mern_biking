@@ -8,7 +8,7 @@ const authRouter = require("./routes/auth.js");
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@mern-learnit.ekuwg.mongodb.net/mern-learnit?retryWrites=true&w=majority`,
+      `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@mern-biking.i7vvp.mongodb.net/mern-biking?retryWrites=true&w=majority`,
       {
         useCreateIndex: true,
         useNewUrlParser: true,
