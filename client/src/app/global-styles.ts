@@ -1,14 +1,27 @@
 import {createGlobalStyle} from "styled-components";
 
+
 export const GlobalStyles = createGlobalStyle`
   * {
+    box-sizing: border-box;
     margin: 0;
     user-select: none;
-    list-style: none;
+  }
+  html {
+    scroll-behavior: smooth;
   }
 
   html, body {
-    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  body{
+    scroll-padding-top: 100px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .page__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
   div {

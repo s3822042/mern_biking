@@ -5,7 +5,9 @@ import AppRouter from "./app/Router";
 function App() {
   return (
       <Router>
-        <AppRouter />
+          <div className="page__container">
+              <AppRouter />
+          </div>
       </Router>
   );
 }
