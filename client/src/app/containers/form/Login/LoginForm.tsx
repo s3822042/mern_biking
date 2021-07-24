@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState,useContext} from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import {RotateSpinner} from 'react-spinners-kit';
 import {BsEyeFill, BsEyeSlashFill} from 'react-icons/bs';
@@ -12,6 +12,7 @@ function LoginForm() {
     const history = useHistory();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [loggingIn, setLoggingIn] = useState(false);
 

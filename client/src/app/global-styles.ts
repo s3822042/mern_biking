@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     user-select: none;
   }
+
   html {
     scroll-behavior: smooth;
   }
@@ -14,10 +15,12 @@ export const GlobalStyles = createGlobalStyle`
   html, body {
     overflow-y: hidden;
   }
-  body{
+
+  body {
     scroll-padding-top: 100px;
     font-family: 'Poppins', sans-serif;
   }
+
   .page__container {
     min-height: 100vh;
     display: flex;
@@ -44,6 +47,14 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     padding: 0;
     margin: 0;
+    cursor: pointer;
   }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
 
   }`;
