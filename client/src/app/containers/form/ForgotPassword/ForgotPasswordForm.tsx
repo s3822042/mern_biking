@@ -1,9 +1,8 @@
-import { useState } from 'react';
-import { RotateSpinner } from 'react-spinners-kit';
-import { Link } from 'react-router-dom';
-import { IoChevronBack } from 'react-icons/io5';
-import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
+import {useState} from 'react';
+import {RotateSpinner} from 'react-spinners-kit';
+import {Link} from 'react-router-dom';
+import {IoChevronBack} from 'react-icons/io5';
+import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -39,18 +38,18 @@ function ForgotPasswordForm() {
                             </div>
 
                             <button disabled={resetting ? true : false} type="submit">
-                                {resetting ? <RotateSpinner size={30} color="#fff" /> : 'Send Link'}
+                                {resetting ? <RotateSpinner size={30} color="#fff"/> : 'Send Link'}
                             </button>
                         </form>
                     )}
 
                     <Link to="/login" className="backToLogin">
-                        <IoChevronBack /> Back to Login
+                        <IoChevronBack/> Back to Login
                     </Link>
                 </div>
             </div>
 
-            <ToastContainer hideProgressBar autoClose={3000} />
+            <ToastContainer hideProgressBar autoClose={3000}/>
         </>
     )
 }

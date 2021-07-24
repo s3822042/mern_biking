@@ -108,7 +108,7 @@ $navyBlue: #262946;
     max-width: 30rem;
     width: 100%;
     margin-top: 2rem;
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       margin-top: -2rem;
     }
 
@@ -161,11 +161,13 @@ $navyBlue: #262946;
           color: $textColor;
           transition: all 0.2s ease-in;
         }
+
         @media (min-width: 768px) {
           input:hover {
             border: 1px solid $blue;
           }
         }
+
         input:focus {
           border: 1px solid $lightBlue;
         }
@@ -195,11 +197,13 @@ $navyBlue: #262946;
         align-items: center;
         justify-content: center;
       }
+
       button:hover {
         cursor: pointer;
         transform: translateY(-10%);
       }
     }
+
     .forgotPass {
       text-decoration: none;
       color: $subColor;
@@ -224,6 +228,7 @@ $navyBlue: #262946;
         transition: all 0.3s ease-in;
         font-weight: bold;
       }
+
       span:hover {
         text-decoration: underline;
         color: $textColor;

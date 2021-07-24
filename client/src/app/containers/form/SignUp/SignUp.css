@@ -1,209 +1,239 @@
 .signup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 3rem;
-}
-@media (max-width: 768px) and (orientation: landscape) {
-  .signup {
-    margin-bottom: 5rem;
-  }
-}
-@media (min-width: 768px) {
-  .signup {
-    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    margin-bottom: 3rem;
 }
-.signup .assets {
-  position: absolute;
-  z-index: -2;
-  top: -10%;
-  left: -15%;
-}
-@media (max-width: 481px) {
-  .signup .assets {
-    top: -20%;
-    left: -20%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .signup .assets {
-    top: -10%;
-    left: -20%;
-  }
-}
-.signup .assets img {
-  position: absolute;
-  height: 4rem;
-  top: 50%;
-  left: 100%;
-  transform: rotate(-20deg) scaleX(-1);
-  color: #080809;
-  animation: astronautAnim 5s ease-in-out infinite forwards;
-}
-@media (max-width: 481px) {
-  .signup .assets img {
-    height: 3rem;
-  }
-}
+
 @media (max-width: 768px) and (orientation: landscape) {
-  .signup .assets img {
-    top: 30%;
-  }
+    .signup {
+        margin-bottom: 5rem;
+    }
 }
-@keyframes astronautAnim {
-  0% {
-    transform: translateY(0%) rotate(-20deg) scaleX(-1);
-  }
-  25% {
-    transform: translateY(10%) rotate(-20deg) scaleX(-1);
-  }
-  50% {
-    transform: translateY(-10%) rotate(-20deg) scaleX(-1);
-  }
-  75% {
-    transform: translateY(10%) rotate(-20deg) scaleX(-1);
-  }
-  100% {
-    transform: translateY(0%) rotate(-20deg) scaleX(-1);
-  }
+
+@media (min-width: 768px) {
+    .signup {
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
-.signup .assets .circle {
-  height: 30rem;
-  width: 30rem;
-  opacity: 1;
-  border-radius: 100%;
-  background: linear-gradient(to left, #0066ff, #B8C4F4);
-  animation: circleAnim 5s ease-in-out infinite forwards;
+
+.signup .assets {
+    position: absolute;
+    z-index: -2;
+    top: -10%;
+    left: -15%;
 }
-@keyframes circleAnim {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@media (max-width: 768px) {
-  .signup .assets .circle {
-    height: 20rem;
-    width: 20rem;
-  }
-}
+
 @media (max-width: 481px) {
-  .signup .assets .circle {
-    height: 16rem;
-    width: 16rem;
-  }
+    .signup .assets {
+        top: -20%;
+        left: -20%;
+    }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .signup .assets {
+        top: -10%;
+        left: -20%;
+    }
+}
+
+.signup .assets img {
+    position: absolute;
+    height: 4rem;
+    top: 50%;
+    left: 100%;
+    transform: rotate(-20deg) scaleX(-1);
+    color: #080809;
+    animation: astronautAnim 5s ease-in-out infinite forwards;
+}
+
+@media (max-width: 481px) {
+    .signup .assets img {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .signup .assets img {
+        top: 30%;
+    }
+}
+
+@keyframes astronautAnim {
+    0% {
+        transform: translateY(0%) rotate(-20deg) scaleX(-1);
+    }
+    25% {
+        transform: translateY(10%) rotate(-20deg) scaleX(-1);
+    }
+    50% {
+        transform: translateY(-10%) rotate(-20deg) scaleX(-1);
+    }
+    75% {
+        transform: translateY(10%) rotate(-20deg) scaleX(-1);
+    }
+    100% {
+        transform: translateY(0%) rotate(-20deg) scaleX(-1);
+    }
+}
+
+.signup .assets .circle {
+    height: 30rem;
+    width: 30rem;
+    opacity: 1;
+    border-radius: 100%;
+    background: linear-gradient(to left, #0066ff, #B8C4F4);
+    animation: circleAnim 5s ease-in-out infinite forwards;
+}
+
+@keyframes circleAnim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .signup .assets .circle {
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+@media (max-width: 481px) {
+    .signup .assets .circle {
+        height: 16rem;
+        width: 16rem;
+    }
+}
+
 .signup .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 30rem;
-  width: 100%;
-  margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+    width: 100%;
+    margin-top: 2rem;
 }
+
 @media (min-width: 768px) {
-  .signup .container {
-    margin-top: -2rem;
-  }
+    .signup .container {
+        margin-top: -2rem;
+    }
 }
+
 .signup .container .header {
-  color: #080809;
-  display: flex;
-  flex-direction: column;
+    color: #080809;
+    display: flex;
+    flex-direction: column;
 }
+
 .signup .container .header p {
-  text-align: center;
-  font-size: 1.75rem;
-  font-weight: bold;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
 }
+
 .signup .container .header span {
-  text-align: center;
-  opacity: 0.8;
-  margin-top: -1rem;
+    text-align: center;
+    opacity: 0.8;
+    margin-top: -1rem;
 }
+
 .signup .container form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .signup .container form .name, .signup .container form .email, .signup .container form .password {
-  display: flex;
-  flex-direction: column;
-  color: #080809;
-  width: 90%;
-  max-width: 20rem;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #080809;
+    width: 90%;
+    max-width: 20rem;
+    position: relative;
 }
+
 .signup .container form .name label, .signup .container form .email label, .signup .container form .password label {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #080809;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #080809;
 }
+
 .signup .container form .name input, .signup .container form .email input, .signup .container form .password input {
-  font-size: 1.15rem;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #5d5c5f;
-  padding: 0.75rem;
-  background: transparent;
-  color: #080809;
-  transition: all 0.2s ease-in;
+    font-size: 1.15rem;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #5d5c5f;
+    padding: 0.75rem;
+    background: transparent;
+    color: #080809;
+    transition: all 0.2s ease-in;
 }
+
 @media (min-width: 768px) {
-  .signup .container form .name input:hover, .signup .container form .email input:hover, .signup .container form .password input:hover {
-    border: 1px solid #0066ff;
-  }
+    .signup .container form .name input:hover, .signup .container form .email input:hover, .signup .container form .password input:hover {
+        border: 1px solid #0066ff;
+    }
 }
+
 .signup .container form .name input:focus, .signup .container form .email input:focus, .signup .container form .password input:focus {
-  border: 1px solid #64b5f6;
+    border: 1px solid #64b5f6;
 }
+
 .signup .container form .name .eyeIcons, .signup .container form .email .eyeIcons, .signup .container form .password .eyeIcons {
-  position: absolute;
-  top: 66%;
-  right: 5%;
-  cursor: pointer;
-  font-size: 1.15rem;
+    position: absolute;
+    top: 66%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 1.15rem;
 }
+
 .signup .container form button {
-  margin-top: 2rem;
-  width: 85%;
-  max-width: 20rem;
-  height: 3rem;
-  border: none;
-  border-radius: 5px;
-  background: #0066ff;
-  font-size: 1.15rem;
-  font-weight: bold;
-  color: #f1f2f4;
-  transition: all 0.2s ease-in;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    margin-top: 2rem;
+    width: 85%;
+    max-width: 20rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    background: #0066ff;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #f1f2f4;
+    transition: all 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .signup .container form button:hover {
-  cursor: pointer;
-  transform: translateY(-10%);
+    cursor: pointer;
+    transform: translateY(-10%);
 }
+
 .signup .container .oldUser {
-  text-decoration: none;
-  color: #5d5c5f;
-  margin-top: 1.5rem;
-  font-size: 1.05rem;
+    text-decoration: none;
+    color: #5d5c5f;
+    margin-top: 1.5rem;
+    font-size: 1.05rem;
 }
+
 .signup .container .oldUser span {
-  transition: all 0.3s ease-in;
-  font-weight: bold;
+    transition: all 0.3s ease-in;
+    font-weight: bold;
 }
+
 .signup .container .oldUser span:hover {
-  text-decoration: underline;
-  color: #080809;
+    text-decoration: underline;
+    color: #080809;
 }
 
 /*# sourceMappingURL=SignUp.css.map */

@@ -14,11 +14,11 @@ export default function apiCaller(url: string) {
 export async function bikingSearchData() {
     const fetchUrl = ``;
     const items = await apiCaller(fetchUrl);
-    return { fetchUrl, value: items };
+    return {fetchUrl, value: items};
 }
 
 export async function bikingFetchData() {
     const fetchUrl = ``;
     const items = await apiCaller(fetchUrl);
-    return { fetchUrl, value: items };
+    return {fetchUrl, value: items};
 }

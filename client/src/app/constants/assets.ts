@@ -1,3 +1,3 @@
-const src = "/assets/images/";
+const userImage = "../assets/images/user-avatar";
 
-export const LUAN = `${src}/people/luan.jpg`;
+export const anime = `${userImage}/anime.jpg`;

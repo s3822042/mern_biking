@@ -1,0 +1,81 @@
+$mainColor: #f1f2f4;
+$subColor: #5d5c5f;
+$textColor: #080809;
+$subTextColor: #cbbaba;
+$blue: #0066ff;
+$lightBlue: #64b5f6;
+$orange: #ef5116;
+$navyBlue: #262946;
+
+.profile-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  &-left-column {
+    padding: 80px 0 0 20px;
+  }
+
+  &-user-image {
+
+    img {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
+  &-user-workplace {
+    padding: 0 0 0 20px;
+  }
+
+  &-user-title {
+    padding-top: 20px;
+    font-size: 12px;
+    color: $subTextColor;
+  }
+
+  &-user-address-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+  }
+
+  &-user-work-location {
+    padding-top: 20px;
+    font-size: 22px;
+    color: $textColor;
+  }
+
+  &-user-workplace-button {
+    color: $lightBlue;
+    background-color: $blue;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-user-work-address {
+    font-size: 16px;
+    color: $subTextColor;
+  }
+
+  &-right-column {
+    padding: 0 0 0 20px;
+  }
+
+  &-user-name {
+    padding-top: 80px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  &-user-role {
+    color: $blue;
+    padding: 10px 0 0 5px;
+    font-size: 16px;
+  }
+
+
+}
