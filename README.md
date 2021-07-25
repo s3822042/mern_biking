@@ -1,6 +1,8 @@
-This is a [React.js](https://reactjs.org/) project bootstrapped with [`create-react-app`](https://github.com/facebook/create-react-app).
+This is a [React.js](https://reactjs.org/) project bootstrapped
+with [`create-react-app`](https://github.com/facebook/create-react-app).
 
 ## Clone the project
+
 ```bash
 git clone https://github.com/s3822042/mern_biking.git
 cd mern_biking
@@ -16,6 +18,7 @@ npm run start
 # or
 yarn start
 ```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 Second, run the backend server:
@@ -36,20 +39,33 @@ To learn more about React.js, take a look at the following resources:
 
 ## Tech Stack
 
-For front-end technologies:
 
-1. React
-2. Redux
-3. TypeScript
+<table style="text-align:left;border-collapse: collapse;width: 100%;">
+   <thead>
+      <th>Frontend</th>
+      <th>Backend</th>
+   </thead>
+   <tbody>
+      <tr>
+         <th>React</th>
+         <th>Node</th>
+      </tr>
+      <tr>
+         <th>Redux</th>
+         <th>Express</th>
+      </tr>
+      <tr>
+         <th>TypeScript</th>
+         <th>MongoDB</th>
+      </tr>
+      <tr>
+         <th>Material UI</th>
+         <th>Apollo Client</th>
+      </tr>
+   </tbody>
+</table>
 
-For back-end technologies:
-
-1. Node
-2. Express
-3. MongoDB
-4. Apollo Client
-
-# Command  🏻‍💻
+# Command ‍💻
 
 | command                   | What it does?                                                        | Thanks to Plugin                                                                       |
 | ------------------------- | :------------------------------------------------------------------  | :------------------------------------------------------------------------------------- |
@@ -57,8 +73,9 @@ For back-end technologies:
 | `npm run build`           | Build project for production                                         |                                                                                        |
 | `npm run test`            | Testing                                                              |                                                                                        |
 
-
 ## Contributors ✨
+
 Thank goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
+Contributions of any kind welcome!
