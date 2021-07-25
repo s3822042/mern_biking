@@ -5,3 +5,4 @@ export const __forgotPassword = "/forgot-password";
 export const __about = "/about";
 export const __contact = "/contact";
 export const __profile = "/profile";
+export const __services = "/services";
