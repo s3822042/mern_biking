@@ -35,3 +35,28 @@ app.use("/api/auth", authRouter);
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+
+// const multer = require('multer');
+
+// const upload = multer({
+//   dest: 'images',
+//   limits: {
+//     fileSize: 100000
+//   },
+//   fileFilter(req, file, cb) {
+//     if(!( 
+//           file.originalname.endsWith('.jpg') || 
+//           file.originalname.endsWith('.jpeg') ||
+//           file.originalname.endsWith('.png')  
+//         )
+//       ) {
+//           return cb(new Error('Please upload a png/jpg/jpeg image'))
+//       }
+
+//       cb(undefined, true)
+//   }
+// })
+
+// app.post('/upload', upload.single('upload'), (req, res) => {
+//   res.send()
+// })
